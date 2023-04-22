@@ -1,0 +1,182 @@
+WARNING: Package "github.com/golang/protobuf/protoc-gen-go/generator" is deprecated.
+	A future release of golang/protobuf will delete this package,
+	which has long been excluded from the compatibility promise.
+
+[WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
+2023-04-22 08:32:51.495546 I | etcdmain: etcd Version: 3.4.24
+2023-04-22 08:32:51.496783 I | etcdmain: Git SHA: 6d1bfe4f9
+2023-04-22 08:32:51.497064 I | etcdmain: Go Version: go1.17.13
+2023-04-22 08:32:51.497392 I | etcdmain: Go OS/Arch: linux/amd64
+2023-04-22 08:32:51.497690 I | etcdmain: setting maximum number of CPUs to 4, total number of available CPUs is 4
+[WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
+2023-04-22 08:32:51.499295 I | embed: peerTLS: cert = /etc/kubernetes/pki/etcd/peer.crt, key = /etc/kubernetes/pki/etcd/peer.key, trusted-ca = /etc/kubernetes/pki/etcd/ca.crt, client-cert-auth = true, crl-file = 
+2023-04-22 08:32:51.517427 I | embed: name = master
+2023-04-22 08:32:51.517667 I | embed: data dir = /var/lib/etcd
+2023-04-22 08:32:51.518122 I | embed: member dir = /var/lib/etcd/member
+2023-04-22 08:32:51.518335 I | embed: heartbeat = 100ms
+2023-04-22 08:32:51.518538 I | embed: election = 1000ms
+2023-04-22 08:32:51.518770 I | embed: snapshot count = 10000
+2023-04-22 08:32:51.519074 I | embed: advertise client URLs = https://127.0.0.1:2379
+2023-04-22 08:32:51.606223 I | etcdserver: starting member a874c87fd42044f in cluster c9be114fc2da2776
+raft2023/04/22 08:32:51 INFO: a874c87fd42044f switched to configuration voters=()
+raft2023/04/22 08:32:51 INFO: a874c87fd42044f became follower at term 0
+raft2023/04/22 08:32:51 INFO: newRaft a874c87fd42044f [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+raft2023/04/22 08:32:51 INFO: a874c87fd42044f became follower at term 1
+raft2023/04/22 08:32:51 INFO: a874c87fd42044f switched to configuration voters=(758659209188475983)
+2023-04-22 08:32:51.618404 W | auth: simple token is not cryptographically signed
+2023-04-22 08:32:51.628419 I | etcdserver: starting server... [version: 3.4.24, cluster version: to_be_decided]
+2023-04-22 08:32:51.629116 I | etcdserver: a874c87fd42044f as single-node; fast-forwarding 9 ticks (election ticks 10)
+2023-04-22 08:32:51.633367 I | pkg/fileutil: started to purge file, dir: /var/lib/etcd/member/snap, suffix: snap.db, max: 5, interval: 30s
+2023-04-22 08:32:51.634098 I | pkg/fileutil: started to purge file, dir: /var/lib/etcd/member/snap, suffix: snap, max: 5, interval: 30s
+2023-04-22 08:32:51.634492 I | pkg/fileutil: started to purge file, dir: /var/lib/etcd/member/wal, suffix: wal, max: 5, interval: 30s
+raft2023/04/22 08:32:51 INFO: a874c87fd42044f switched to configuration voters=(758659209188475983)
+2023-04-22 08:32:51.645049 I | etcdserver/membership: added member a874c87fd42044f [https://127.0.0.1:2380] to cluster c9be114fc2da2776
+2023-04-22 08:32:51.649153 I | embed: ClientTLS: cert = /etc/kubernetes/pki/etcd/server.crt, key = /etc/kubernetes/pki/etcd/server.key, trusted-ca = /etc/kubernetes/pki/etcd/ca.crt, client-cert-auth = true, crl-file = 
+2023-04-22 08:32:51.650569 I | embed: listening for peers on 127.0.0.1:2380
+raft2023/04/22 08:32:52 INFO: a874c87fd42044f is starting a new election at term 1
+raft2023/04/22 08:32:52 INFO: a874c87fd42044f became candidate at term 2
+raft2023/04/22 08:32:52 INFO: a874c87fd42044f received MsgVoteResp from a874c87fd42044f at term 2
+raft2023/04/22 08:32:52 INFO: a874c87fd42044f became leader at term 2
+raft2023/04/22 08:32:52 INFO: raft.node: a874c87fd42044f elected leader a874c87fd42044f at term 2
+2023-04-22 08:32:52.145226 I | etcdserver: setting up the initial cluster version to 3.4
+2023-04-22 08:32:52.151313 N | etcdserver/membership: set the initial cluster version to 3.4
+2023-04-22 08:32:52.152794 I | embed: ready to serve client requests
+2023-04-22 08:32:52.154317 I | etcdserver: published {Name:master ClientURLs:[https://127.0.0.1:2379]} to cluster c9be114fc2da2776
+2023-04-22 08:32:52.158054 I | etcdserver/api: enabled capabilities for version 3.4
+2023-04-22 08:32:52.189047 I | embed: serving client requests on 127.0.0.1:2379
+I0422 08:38:46.599112     119 server.go:551] external host was not specified, using 172.17.0.2
+I0422 08:38:46.617495     119 server.go:165] Version: v1.27.1
+I0422 08:38:46.618214     119 server.go:167] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0422 08:38:48.096449     119 shared_informer.go:311] Waiting for caches to sync for node_authorizer
+I0422 08:38:48.164556     119 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I0422 08:38:48.164968     119 plugins.go:161] Loaded 13 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,ClusterTrustBundleAttest,CertificateSubjectRestriction,ValidatingAdmissionPolicy,ValidatingAdmissionWebhook,ResourceQuota.
+I0422 08:38:48.372140     119 handler.go:232] Adding GroupVersion apiextensions.k8s.io v1 to ResourceManager
+W0422 08:38:48.373278     119 genericapiserver.go:752] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I0422 08:38:48.383204     119 instance.go:282] Using reconciler: lease
+I0422 08:38:49.007738     119 handler.go:232] Adding GroupVersion  v1 to ResourceManager
+I0422 08:38:49.009919     119 instance.go:651] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+I0422 08:38:50.057801     119 instance.go:651] API group "resource.k8s.io" is not enabled, skipping.
+I0422 08:38:50.089131     119 handler.go:232] Adding GroupVersion authentication.k8s.io v1 to ResourceManager
+W0422 08:38:50.089489     119 genericapiserver.go:752] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.089765     119 genericapiserver.go:752] Skipping API authentication.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.097421     119 handler.go:232] Adding GroupVersion authorization.k8s.io v1 to ResourceManager
+W0422 08:38:50.097765     119 genericapiserver.go:752] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+I0422 08:38:50.106579     119 handler.go:232] Adding GroupVersion autoscaling v2 to ResourceManager
+I0422 08:38:50.109257     119 handler.go:232] Adding GroupVersion autoscaling v1 to ResourceManager
+W0422 08:38:50.109668     119 genericapiserver.go:752] Skipping API autoscaling/v2beta1 because it has no resources.
+W0422 08:38:50.109898     119 genericapiserver.go:752] Skipping API autoscaling/v2beta2 because it has no resources.
+I0422 08:38:50.120445     119 handler.go:232] Adding GroupVersion batch v1 to ResourceManager
+W0422 08:38:50.120752     119 genericapiserver.go:752] Skipping API batch/v1beta1 because it has no resources.
+I0422 08:38:50.130067     119 handler.go:232] Adding GroupVersion certificates.k8s.io v1 to ResourceManager
+W0422 08:38:50.130381     119 genericapiserver.go:752] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.130660     119 genericapiserver.go:752] Skipping API certificates.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.138418     119 handler.go:232] Adding GroupVersion coordination.k8s.io v1 to ResourceManager
+W0422 08:38:50.138704     119 genericapiserver.go:752] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.144414     119 genericapiserver.go:752] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+I0422 08:38:50.146519     119 handler.go:232] Adding GroupVersion discovery.k8s.io v1 to ResourceManager
+I0422 08:38:50.158828     119 handler.go:232] Adding GroupVersion networking.k8s.io v1 to ResourceManager
+W0422 08:38:50.159200     119 genericapiserver.go:752] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.159518     119 genericapiserver.go:752] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.186087     119 handler.go:232] Adding GroupVersion node.k8s.io v1 to ResourceManager
+W0422 08:38:50.186556     119 genericapiserver.go:752] Skipping API node.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.186972     119 genericapiserver.go:752] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.195418     119 handler.go:232] Adding GroupVersion policy v1 to ResourceManager
+W0422 08:38:50.195746     119 genericapiserver.go:752] Skipping API policy/v1beta1 because it has no resources.
+I0422 08:38:50.206723     119 handler.go:232] Adding GroupVersion rbac.authorization.k8s.io v1 to ResourceManager
+W0422 08:38:50.207028     119 genericapiserver.go:752] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.207332     119 genericapiserver.go:752] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.214126     119 handler.go:232] Adding GroupVersion scheduling.k8s.io v1 to ResourceManager
+W0422 08:38:50.214427     119 genericapiserver.go:752] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.214693     119 genericapiserver.go:752] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.226154     119 handler.go:232] Adding GroupVersion storage.k8s.io v1 to ResourceManager
+W0422 08:38:50.226467     119 genericapiserver.go:752] Skipping API storage.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.226741     119 genericapiserver.go:752] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.235906     119 handler.go:232] Adding GroupVersion flowcontrol.apiserver.k8s.io v1beta3 to ResourceManager
+I0422 08:38:50.240271     119 handler.go:232] Adding GroupVersion flowcontrol.apiserver.k8s.io v1beta2 to ResourceManager
+W0422 08:38:50.240528     119 genericapiserver.go:752] Skipping API flowcontrol.apiserver.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.240807     119 genericapiserver.go:752] Skipping API flowcontrol.apiserver.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.257947     119 handler.go:232] Adding GroupVersion apps v1 to ResourceManager
+W0422 08:38:50.258263     119 genericapiserver.go:752] Skipping API apps/v1beta2 because it has no resources.
+W0422 08:38:50.258525     119 genericapiserver.go:752] Skipping API apps/v1beta1 because it has no resources.
+I0422 08:38:50.266767     119 handler.go:232] Adding GroupVersion admissionregistration.k8s.io v1 to ResourceManager
+W0422 08:38:50.267059     119 genericapiserver.go:752] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+W0422 08:38:50.267378     119 genericapiserver.go:752] Skipping API admissionregistration.k8s.io/v1alpha1 because it has no resources.
+I0422 08:38:50.274203     119 handler.go:232] Adding GroupVersion events.k8s.io v1 to ResourceManager
+W0422 08:38:50.274491     119 genericapiserver.go:752] Skipping API events.k8s.io/v1beta1 because it has no resources.
+I0422 08:38:50.319553     119 handler.go:232] Adding GroupVersion apiregistration.k8s.io v1 to ResourceManager
+W0422 08:38:50.320017     119 genericapiserver.go:752] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+I0422 08:38:52.188496     119 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/pki/front-proxy-ca.crt"
+I0422 08:38:52.188539     119 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/pki/ca.crt"
+I0422 08:38:52.191533     119 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/etc/kubernetes/pki/apiserver.crt::/etc/kubernetes/pki/apiserver.key"
+I0422 08:38:52.197210     119 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I0422 08:38:52.197454     119 secure_serving.go:210] Serving securely on [::]:6443
+I0422 08:38:52.200384     119 apiservice_controller.go:97] Starting APIServiceRegistrationController
+I0422 08:38:52.201400     119 controller.go:80] Starting OpenAPI V3 AggregationController
+I0422 08:38:52.201599     119 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I0422 08:38:52.205680     119 cluster_authentication_trust_controller.go:440] Starting cluster_authentication_trust_controller controller
+I0422 08:38:52.206166     119 shared_informer.go:311] Waiting for caches to sync for cluster_authentication_trust_controller
+I0422 08:38:52.206549     119 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/pki/ca.crt"
+I0422 08:38:52.206857     119 apf_controller.go:361] Starting API Priority and Fairness config controller
+I0422 08:38:52.208022     119 system_namespaces_controller.go:67] Starting system namespaces controller
+I0422 08:38:52.209004     119 handler_discovery.go:392] Starting ResourceDiscoveryManager
+I0422 08:38:52.218309     119 gc_controller.go:78] Starting apiserver lease garbage collector
+I0422 08:38:52.220030     119 gc_controller.go:78] Starting apiserver lease garbage collector
+I0422 08:38:52.224635     119 controller.go:121] Starting legacy_token_tracking_controller
+I0422 08:38:52.224940     119 shared_informer.go:311] Waiting for caches to sync for configmaps
+I0422 08:38:52.225650     119 dynamic_serving_content.go:132] "Starting controller" name="aggregator-proxy-cert::/etc/kubernetes/pki/front-proxy-client.crt::/etc/kubernetes/pki/front-proxy-client.key"
+I0422 08:38:52.227391     119 customresource_discovery_controller.go:289] Starting DiscoveryController
+I0422 08:38:52.200561     119 available_controller.go:494] Starting AvailableConditionController
+I0422 08:38:52.228237     119 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+I0422 08:38:52.206955     119 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/pki/front-proxy-ca.crt"
+I0422 08:38:52.230645     119 controller.go:85] Starting OpenAPI controller
+I0422 08:38:52.231064     119 controller.go:85] Starting OpenAPI V3 controller
+I0422 08:38:52.231623     119 naming_controller.go:291] Starting NamingConditionController
+I0422 08:38:52.232186     119 establishing_controller.go:76] Starting EstablishingController
+I0422 08:38:52.232763     119 nonstructuralschema_controller.go:192] Starting NonStructuralSchemaConditionController
+I0422 08:38:52.233516     119 apiapproval_controller.go:186] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I0422 08:38:52.234561     119 crd_finalizer.go:266] Starting CRDFinalizer
+I0422 08:38:52.235083     119 crdregistration_controller.go:111] Starting crd-autoregister controller
+I0422 08:38:52.235303     119 shared_informer.go:311] Waiting for caches to sync for crd-autoregister
+I0422 08:38:52.228264     119 autoregister_controller.go:141] Starting autoregister controller
+I0422 08:38:52.236823     119 cache.go:32] Waiting for caches to sync for autoregister controller
+I0422 08:38:52.200597     119 controller.go:83] Starting OpenAPI AggregationController
+I0422 08:38:52.369253     119 controller.go:132] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+I0422 08:38:52.397922     119 shared_informer.go:318] Caches are synced for node_authorizer
+I0422 08:38:52.402708     119 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I0422 08:38:52.425754     119 shared_informer.go:318] Caches are synced for configmaps
+I0422 08:38:52.428561     119 cache.go:39] Caches are synced for AvailableConditionController controller
+I0422 08:38:52.436498     119 shared_informer.go:318] Caches are synced for crd-autoregister
+I0422 08:38:52.437203     119 cache.go:39] Caches are synced for autoregister controller
+I0422 08:38:52.507329     119 apf_controller.go:366] Running API Priority and Fairness config worker
+I0422 08:38:52.509361     119 apf_controller.go:369] Running API Priority and Fairness periodic rebalancing process
+E0422 08:38:52.507527     119 controller.go:146] "Failed to ensure lease exists, will retry" err="namespaces \"kube-system\" not found" interval="200ms"
+I0422 08:38:52.507587     119 shared_informer.go:318] Caches are synced for cluster_authentication_trust_controller
+E0422 08:38:52.526038     119 controller.go:150] while syncing ConfigMap "kube-system/kube-apiserver-legacy-service-account-token-tracking", err: namespaces "kube-system" not found
+I0422 08:38:52.532406     119 controller.go:624] quota admission added evaluator for: namespaces
+I0422 08:38:52.719512     119 controller.go:624] quota admission added evaluator for: leases.coordination.k8s.io
+I0422 08:38:53.243665     119 storage_scheduling.go:95] created PriorityClass system-node-critical with value 2000001000
+I0422 08:38:53.260046     119 storage_scheduling.go:95] created PriorityClass system-cluster-critical with value 2000000000
+I0422 08:38:53.260787     119 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+I0422 08:38:54.001946     119 controller.go:624] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+I0422 08:38:54.064686     119 controller.go:624] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+I0422 08:38:54.217667     119 alloc.go:330] "allocated clusterIPs" service="default/kubernetes" clusterIPs=map[IPv4:10.96.0.1]
+W0422 08:38:54.235017     119 lease.go:251] Resetting endpoints for master service "kubernetes" to [172.17.0.2]
+I0422 08:38:54.239547     119 controller.go:624] quota admission added evaluator for: endpoints
+I0422 08:38:54.251185     119 controller.go:624] quota admission added evaluator for: endpointslices.discovery.k8s.io
+E0422 08:42:53.171652     119 authentication.go:70] "Unable to authenticate the request" err="[x509: certificate signed by unknown authority, verifying certificate SN=2136659937602143124, SKID=, AKID=50:A3:CF:52:D7:54:7A:89:CE:1E:76:3B:24:E7:45:CB:3F:F1:F8:39 failed: x509: certificate specifies an incompatible key usage]"
+2023-04-22 08:51:44.828463 I | mvcc: store.index: compact 251
+2023-04-22 08:51:44.835252 I | mvcc: finished scheduled compaction at 251 (took 2.561292ms)
+2023-04-22 08:59:57.137389 I | mvcc: store.index: compact 312
+2023-04-22 08:59:57.142326 I | mvcc: finished scheduled compaction at 312 (took 1.596ms)
+2023-04-22 09:04:57.150779 I | mvcc: store.index: compact 372
+2023-04-22 09:04:57.154838 I | mvcc: finished scheduled compaction at 372 (took 1.398458ms)
+2023-04-22 09:09:57.172295 I | mvcc: store.index: compact 432
+2023-04-22 09:09:57.178244 I | mvcc: finished scheduled compaction at 432 (took 1.078625ms)
+2023-04-22 09:14:57.200445 I | mvcc: store.index: compact 493
+2023-04-22 09:14:57.203028 I | mvcc: finished scheduled compaction at 493 (took 756.875µs)
+2023-04-22 09:19:57.210226 I | mvcc: store.index: compact 553
+2023-04-22 09:19:57.214483 I | mvcc: finished scheduled compaction at 553 (took 1.616458ms)
+2023-04-22 09:24:57.181538 I | mvcc: store.index: compact 614
+2023-04-22 09:24:57.186215 I | mvcc: finished scheduled compaction at 614 (took 1.044666ms)
+2023-04-22 09:29:57.183775 I | mvcc: store.index: compact 674
+2023-04-22 09:29:57.187702 I | mvcc: finished scheduled compaction at 674 (took 1.388375ms)
